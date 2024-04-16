@@ -6,10 +6,10 @@ function carregar(){
     var data = new Date()
     var hora = data.getHours()
     var  minutos = data.getMinutes()
-    var segundos = data.getSeconds()
     
     
-    msg.innerHTML = ` ${hora}:${minutos}:${segundos}`
+    
+    msg.innerHTML = ` ${hora}:${minutos}`
     
     if(hora < 12 ){ 
         img.src = 'manha.png' //Inserindo a imagem criada no JS.
