@@ -9,13 +9,18 @@ function carregar(){
     
     
     
-    msg.innerHTML = ` ${hora}:${minutos}`
+    msg.innerHTML = `${hora}:${minutos}`
+    if(hora <= 5){
+        img.src = `madrugada.png`
+        document.body.style.background = '#404e5a'
+
+    }
     
-    if(hora < 12 ){ 
+    else if(hora < 12 ){ 
         img.src = 'manha.png' //Inserindo a imagem criada no JS.
         document.body.style.background = '#FFDAB9' //Alter a cor conforme o período do dia. 
         
-    } else if (hora < 18){
+    } else if (hora <= 18){
         //Boa tarde
         img.src = 'tarde.png' 
         document.body.style.background = '#c37974'
