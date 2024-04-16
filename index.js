@@ -20,7 +20,7 @@ function carregar(){
         img.src = 'tarde.png' 
         document.body.style.background = '#c37974'
         
-    } else if(hora < 23){
+    } else if(hora < 24){
         img.src = 'noite.png'
         document.body.style.background = '#6e7c8d'
     }
